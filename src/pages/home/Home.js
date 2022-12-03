@@ -1,7 +1,9 @@
+import Topbar from "../../components/topbar/Topbar";
+
 export default function Home() {
   return (
     <div>
-      This is the home page
+      <Topbar />
     </div>
   )
 }
