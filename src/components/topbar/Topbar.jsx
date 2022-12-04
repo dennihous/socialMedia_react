@@ -8,11 +8,11 @@ export default function Topbar() {
   return (
     <div className="topbarContainer">
         <div className="topbarLeft">
-          <span className="logo">Dennis Social</span>
+          <span className="logo">DenniSocial</span>
         </div>
         <div className="topbarCenter">
           <div className="searchbar">
-            <SearchIcon />
+            <SearchIcon className="searchIcon" />
             <input placeholder="Search" className="searchInput" />
           </div>
         </div>
@@ -24,14 +24,14 @@ export default function Topbar() {
           <div className="topbarIcon">
             <div className="topbarIconItem">
               <PersonIcon />
-              <span className="topbarIconBardge">1</span>
+              <span className="topbarIconBadge">1</span>
             </div>
             <div className="topbarIconItem">
               <ChatBubbleIcon />
-              <span className="topbarIconBardge">1</span>
+              <span className="topbarIconBadge">1</span>
             </div><div className="topbarIconItem">
               <NotificationsIcon />
-              <span className="topbarIconBardge">1</span>
+              <span className="topbarIconBadge">1</span>
             </div>
           </div>
           <img src="/assets/profilePic.jpg" alt="" className="topbarImage" />
