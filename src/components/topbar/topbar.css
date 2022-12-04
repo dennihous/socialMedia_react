@@ -16,3 +16,11 @@
   cursor: pointer;
 }
 
+.topbarLeft {
+  flex: 3;
+}
+
+.topbarCenter {
+  flex: 5;
+}
+
