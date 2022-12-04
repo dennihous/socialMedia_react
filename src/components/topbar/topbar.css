@@ -8,3 +8,11 @@
   top: 0;
 }
 
+.logo {
+  font-size: 25px;
+  margin: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
