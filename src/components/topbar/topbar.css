@@ -24,3 +24,12 @@
   flex: 5;
 }
 
+.searchbar {
+  width: 100%;
+  height: 30px;
+  border-radius: 30px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
