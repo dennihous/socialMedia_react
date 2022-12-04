@@ -70,4 +70,24 @@
   align-items: center;
  }
  
+ .topbarIconItem {
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
+ }
+ 
+ .topbarIconBadge{
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50px;
+  color: white;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ 
  
