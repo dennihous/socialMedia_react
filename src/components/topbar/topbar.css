@@ -33,3 +33,22 @@
   align-items: center;
 }
 
+/* .searchIcon {
+ padding: 10px;
+} */
+
+.searchIcon {
+  font-size: 15px !important;
+  margin-left: 8px;
+ }
+ 
+ .searchInput {
+  border: none;
+  width: 80%;
+ }
+ 
+ .searchInput:focus{
+  outline: none;
+ }
+ 
+ 
