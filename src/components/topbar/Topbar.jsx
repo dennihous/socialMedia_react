@@ -34,6 +34,7 @@ export default function Topbar() {
               <span className="topbarIconBardge">1</span>
             </div>
           </div>
+          <img src="/assets/profilePic.jpg" alt="" className="topbarImage" />
         </div>
     </div>
   )
