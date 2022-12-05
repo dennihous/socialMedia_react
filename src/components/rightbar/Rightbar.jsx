@@ -1,6 +1,6 @@
 import './rightbar.css'
 
-export default function Sidebar() {
+export default function Rightbar() {
   return  (
     <div>
       rightbar
