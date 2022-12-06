@@ -1,0 +1,5 @@
+.sidebar {
+  flex: 3;
+  height: cal(100vh -50px);
+  background-color: green;
+}
