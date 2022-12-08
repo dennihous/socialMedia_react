@@ -27,3 +27,29 @@
   border: none;
   width: 80%;
 }
+
+.shareInput:focus {
+  outline: none;
+}
+
+.shareHr {
+  margin: 20px;
+}
+
+.shareBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shareOptions {
+  display: flex;
+  margin-left: 20px;
+}
+
+.shareOption {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
+}
