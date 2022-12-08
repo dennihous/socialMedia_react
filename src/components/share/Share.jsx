@@ -1,9 +1,24 @@
 import "./share.css"
+import PermMediaIcon from '@mui/icons-material/PermMedia';
 
 export default function Share() {
   return (
-    <div>
-      hey just shared something
+    <div className="share">
+        <div className="shareWrapper">
+          <div className="shareTop">
+            <img className="shareProfileImg" src="/assets/profilePic.jpg" alt="" />
+            <input placeholder="What's on your mind?" className="shareInput" /> 
+          </div>
+          <hr className="shareHr" />
+          <div className="shareBottom">
+            <div className="shareOptions">
+              <div className="shareOption">
+                <span className="shareOptionText">Photo or Video</span>
+                <PermMediaIcon />
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
   )
 }
