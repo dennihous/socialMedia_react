@@ -21,7 +21,13 @@ export default function Share() {
                 <StyleIcon className="shareIcon" />
                 <span className="shareOptionText">Tag</span>
               </div>
-              
+              <div className="shareOption">
+                <PermMediaIcon className="shareIcon" />
+                <span className="shareOptionText">Photo or Video</span>
+              </div>
+              <div className="shareOption">
+                <PermMediaIcon className="shareIcon" />
+                <span className="shareOptionText">Photo or Video</span>
               </div>
             </div>
           </div>
