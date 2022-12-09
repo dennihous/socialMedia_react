@@ -2,6 +2,7 @@ import "./share.css"
 import PermMediaIcon from '@mui/icons-material/PermMedia';
 import StyleIcon from '@mui/icons-material/Style';
 import RoomIcon from '@mui/icons-material/Room';
+import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
 
 export default function Share() {
   return (
@@ -27,8 +28,8 @@ export default function Share() {
                 <span className="shareOptionText">Location</span>
               </div>
               <div className="shareOption">
-                <PermMediaIcon className="shareIcon" />
-                <span className="shareOptionText">Photo or Video</span>
+                <EmojiEmotionsIcon className="shareIcon" />
+                <span className="shareOptionText">Emojis</span>
               </div>
             </div>
           </div>
