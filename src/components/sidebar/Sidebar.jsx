@@ -2,6 +2,7 @@ import './sidebar.css'
 import RssFeedIcon from '@mui/icons-material/RssFeed';
 import ChatIcon from '@mui/icons-material/Chat';
 import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
+import GroupIcon from '@mui/icons-material/Group';
 
 export default function Sidebar() {
   return  (
@@ -19,6 +20,10 @@ export default function Sidebar() {
           <li className="sidebarListItem">
             <VideoLibraryIcon className='sidebarIcon'/>
             <span className="sidebarListItemText">Videos</span>
+          </li>
+          <li className="sidebarListItem">
+            <GroupIcon className='sidebarIcon'/>
+            <span className="sidebarListItemText">Groups</span>
           </li>
         </ul>
       </div>
