@@ -50,7 +50,8 @@ export default function Sidebar() {
         <hr className='sidebarHr'></hr>
         <ul className="sidebarFriend">
           <li className="sidebarFriend">
-            <img className="sidebarFriendImg" />
+            <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
+            <span className="sidebarFriendName">Dennis</span>
           </li>
         </ul>
       </div>
