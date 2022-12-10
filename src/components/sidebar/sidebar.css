@@ -1,5 +1,6 @@
 .sidebar {
   flex: 3;
-  height: cal(100vh -50px);
-  background-color: green;
+  height: 100%;
+  background-color: yellowgreen;
+  position: absolute;
 }
