@@ -2,8 +2,22 @@
   flex: 3;
   height: calc(100vh);
   /* position: relative; */
+  overflow-y: scroll;
 }
 /* issue with height .sidebar */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(179, 179, 179);
+  border-radius: 10px;
+}
 
 .sidebarWrapper {
   padding: 20px;
@@ -18,7 +32,7 @@
 .sidebarListItem {
   display: flex;
   align-items: center;
-  margin: 20px;
+  margin-bottom: 20px;
 }
 
 .sidebarIcon {
