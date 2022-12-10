@@ -46,6 +46,13 @@ export default function Sidebar() {
             <span className="sidebarListItemText">Marketplace</span>
           </li>
         </ul>
+        <button className="sidebarButton">Show More</button>
+        <hr className='sidebarHr'></hr>
+        <ul className="sidebarFriend">
+          <li className="sidebarFriend">
+            <img className="sidebarFriendImg" />
+          </li>
+        </ul>
       </div>
     </div>
   )
