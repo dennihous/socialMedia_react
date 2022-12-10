@@ -5,6 +5,7 @@ import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 import GroupIcon from '@mui/icons-material/Group';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 import WorkIcon from '@mui/icons-material/Work';
+import EventIcon from '@mui/icons-material/Event';
 
 export default function Sidebar() {
   return  (
@@ -34,6 +35,10 @@ export default function Sidebar() {
           <li className="sidebarListItem">
             <WorkIcon className='sidebarIcon'/>
             <span className="sidebarListItemText">Jobs</span>
+          </li>
+          <li className="sidebarListItem">
+            <EventIcon className='sidebarIcon'/>
+            <span className="sidebarListItemText">Events</span>
           </li>
         </ul>
       </div>
