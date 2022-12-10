@@ -48,7 +48,43 @@ export default function Sidebar() {
         </ul>
         <button className="sidebarButton">Show More</button>
         <hr className='sidebarHr'></hr>
-        <ul className="sidebarFriend">
+        <ul className="sidebarFriendList">
+          <li className="sidebarFriend">
+            <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
+            <span className="sidebarFriendName">Dennis</span>
+          </li>
+          <li className="sidebarFriend">
+            <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
+            <span className="sidebarFriendName">Dennis</span>
+          </li>
+          <li className="sidebarFriend">
+            <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
+            <span className="sidebarFriendName">Dennis</span>
+          </li>
+          <li className="sidebarFriend">
+            <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
+            <span className="sidebarFriendName">Dennis</span>
+          </li>
+          <li className="sidebarFriend">
+            <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
+            <span className="sidebarFriendName">Dennis</span>
+          </li>
+          <li className="sidebarFriend">
+            <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
+            <span className="sidebarFriendName">Dennis</span>
+          </li>
+          <li className="sidebarFriend">
+            <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
+            <span className="sidebarFriendName">Dennis</span>
+          </li>
+          <li className="sidebarFriend">
+            <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
+            <span className="sidebarFriendName">Dennis</span>
+          </li>
+          <li className="sidebarFriend">
+            <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
+            <span className="sidebarFriendName">Dennis</span>
+          </li>
           <li className="sidebarFriend">
             <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
             <span className="sidebarFriendName">Dennis</span>
