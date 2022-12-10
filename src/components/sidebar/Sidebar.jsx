@@ -3,10 +3,9 @@ import './sidebar.css'
 export default function Sidebar() {
   return  (
     <div className='sidebar'>
-      <div className="sidevarWrapper">
-        
+      <div className="sidebarWrapper">
+        hello
       </div>
-      sidebar
     </div>
   )
 }
