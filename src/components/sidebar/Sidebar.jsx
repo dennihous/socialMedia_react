@@ -6,6 +6,7 @@ import GroupIcon from '@mui/icons-material/Group';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 import WorkIcon from '@mui/icons-material/Work';
 import EventIcon from '@mui/icons-material/Event';
+import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 
 export default function Sidebar() {
   return  (
@@ -39,6 +40,10 @@ export default function Sidebar() {
           <li className="sidebarListItem">
             <EventIcon className='sidebarIcon'/>
             <span className="sidebarListItemText">Events</span>
+          </li>
+          <li className="sidebarListItem">
+            <LocalGroceryStoreIcon className='sidebarIcon'/>
+            <span className="sidebarListItemText">Marketplace</span>
           </li>
         </ul>
       </div>
