@@ -3,6 +3,7 @@
   height: calc(100vh);
   /* position: relative; */
 }
+/* issue with height .sidebar */
 
 .sidebarWrapper {
   padding: 20px;
