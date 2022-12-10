@@ -4,6 +4,7 @@ import ChatIcon from '@mui/icons-material/Chat';
 import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 import GroupIcon from '@mui/icons-material/Group';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
+import WorkIcon from '@mui/icons-material/Work';
 
 export default function Sidebar() {
   return  (
@@ -29,6 +30,10 @@ export default function Sidebar() {
           <li className="sidebarListItem">
             <BookmarkIcon className='sidebarIcon'/>
             <span className="sidebarListItemText">Bookmarks</span>
+          </li>
+          <li className="sidebarListItem">
+            <WorkIcon className='sidebarIcon'/>
+            <span className="sidebarListItemText">Jobs</span>
           </li>
         </ul>
       </div>
