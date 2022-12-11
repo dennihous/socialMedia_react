@@ -15,8 +15,13 @@ export default function Post() {
           <MoreVertIcon/>
           </div>
         </div>
-        <div className="postCenter"></div>
-        <div className="postBottom"></div>
+        <div className="postCenter">
+          <span className="postText">First post</span>
+          <img className="postImage" src="assets/profilePic.jpg" alt="" />
+        </div>
+        <div className="postBottom">
+          
+        </div>
       </div>
     </div>
   )
