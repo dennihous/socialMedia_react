@@ -1,5 +1,7 @@
 import "./post.css"
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 
 export default function Post() {
   return (
@@ -21,8 +23,8 @@ export default function Post() {
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">
-            <img src="assets/" alt="" className="likeIcon" />
-            <img src="assets/" alt="" className="likeIcon" />
+            <FavoriteIcon className="likeIcon" />
+            <ThumbUpIcon />
             <span className="postLikeCounter">32 people like it</span>
           </div>
           <div className="postBottomRight">
