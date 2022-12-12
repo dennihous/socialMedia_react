@@ -23,8 +23,8 @@ export default function Post() {
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">
-            <FavoriteIcon className="likeIcon" />
-            <ThumbUpIcon />
+            <ThumbUpIcon htmlColor="skyblue" className="likeIcon"/>
+            <FavoriteIcon htmlColor="red" className="likeIcon" />
             <span className="postLikeCounter">32 people like it</span>
           </div>
           <div className="postBottomRight">

@@ -54,3 +54,8 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.postBottomLeft {
+  display: flex;
+  align-items: center;
+}
