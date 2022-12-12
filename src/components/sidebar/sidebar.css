@@ -1,6 +1,6 @@
 .sidebar {
   flex: 3;
-  height: calc(100vh);
+  height: 100vh;
   /* position: relative; */
   overflow-y: scroll;
 }
