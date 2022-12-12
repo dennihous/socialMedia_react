@@ -66,3 +66,12 @@
   margin-right: 5px;
   cursor: pointer;
 }
+
+.postLikeCounter {
+  font-size: 15px;
+}
+
+.postCommentText {
+  cursor: pointer;
+  border-bottom: 1px dashed gray;
+}
