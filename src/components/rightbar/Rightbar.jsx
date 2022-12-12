@@ -8,7 +8,7 @@ export default function Rightbar() {
         <div className="birthdayContainer">
           <CakeIcon className='birthdayImage' />
           <span className="birthdayText">
-            <b>Dennis</b> and <b>3 other friends</b> have their birthday today
+            <b>Dennis</b> and <b>3 other friends</b> have their birthday today.
           </span>
         </div>
       </div>
