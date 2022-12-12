@@ -11,6 +11,7 @@ export default function Rightbar() {
             <b>Dennis</b> and <b>3 other friends</b> have their birthday today.
           </span>
         </div>
+        <img src="assets/profilePic.jpg" alt="" className="rightbarAd" />
       </div>
     </div>
   )
