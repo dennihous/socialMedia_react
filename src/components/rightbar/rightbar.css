@@ -6,8 +6,21 @@
   padding: 20px 20px 0 0;
 }
 
+.birthdayContainer {
+  display: flex;
+  align-items: center;
+}
+
 .birthdayImage {
   width: 40px;
   height: 40px;
+  transform: scale(1.2);  
   margin-right: 10px;
+  margin-left: 5px;
 }
+
+.birthdayText {
+  font-weight: 300;
+  font-size: 15px;
+}
+
