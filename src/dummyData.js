@@ -63,7 +63,7 @@ export const Posts = [
   },
   {
     id: 2,
-    description: "Hello this is a post from me",
+    description: "Hello this is another post from me",
     photo: "assets/view.jpeg",
     date: "10 mins ago",
     userId: 1,
