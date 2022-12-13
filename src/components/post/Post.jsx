@@ -2,15 +2,21 @@ import "./post.css"
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
+import { Users } from '../../dummyData'
 
 export default function Post({post}) {
+
+  const user = Users.filter(u => u.id === 1)
+
+  console.log(user[0].username)
+
   return (
     <div className="post">
       <div className="postWrapper">
         <div className="postTop">
           <div className="postTopLeft">
             <img className="postProfileImage" src="/assets/profilePic.jpg" alt="" />
-            <span className="postUsername">Dennis</span>
+            <span className="postUsername">{Users.filter(u => u.id === post.userId)[0].username}</span>
             <span className="postDate">{post.date}</span>
           </div>
           <div className="postTopRight">
