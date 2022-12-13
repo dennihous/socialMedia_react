@@ -51,7 +51,7 @@ export const Users = [
   },
 ];
 
-export const Post = [
+export const Posts = [
   {
     id: 1,
     description: "Hello this is a post from me",
