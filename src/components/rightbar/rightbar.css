@@ -35,3 +35,9 @@
   margin: 0;
   list-style: none;
 }
+
+.rightbarFriend {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
