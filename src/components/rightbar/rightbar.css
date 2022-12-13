@@ -41,3 +41,8 @@
   align-items: center;
   margin-bottom: 15px;
 }
+
+.rightbarProfileImageContainer {
+  margin-right: 10px;
+  position: relative;
+}
