@@ -1,5 +1,7 @@
 import './rightbar.css'
 import CakeIcon from '@mui/icons-material/Cake';
+import { Users } from '../../dummyData';
+import Online from '../online/Online';
 
 export default function Rightbar() {
   return  (
@@ -14,69 +16,9 @@ export default function Rightbar() {
         <img src="assets/profilePic.jpg" alt="" className="rightbarAd" />
         <h4 className="rightbarTitle">Online friends</h4>
         <ul className="rightbarFriendList">
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImageContainer">
-              <img src="assets/profilePic.jpg" alt="" className="rightbarProfileImage" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Dennis</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImageContainer">
-              <img src="assets/profilePic.jpg" alt="" className="rightbarProfileImage" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Dennis</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImageContainer">
-              <img src="assets/profilePic.jpg" alt="" className="rightbarProfileImage" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Dennis</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImageContainer">
-              <img src="assets/profilePic.jpg" alt="" className="rightbarProfileImage" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Dennis</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImageContainer">
-              <img src="assets/profilePic.jpg" alt="" className="rightbarProfileImage" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Dennis</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImageContainer">
-              <img src="assets/profilePic.jpg" alt="" className="rightbarProfileImage" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Dennis</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImageContainer">
-              <img src="assets/profilePic.jpg" alt="" className="rightbarProfileImage" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Dennis</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImageContainer">
-              <img src="assets/profilePic.jpg" alt="" className="rightbarProfileImage" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Dennis</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImageContainer">
-              <img src="assets/profilePic.jpg" alt="" className="rightbarProfileImage" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Dennis</span>
-          </li>
+          {Users.map(u =>  (
+            <Online key={u.id} user={u} />
+          ))}
         </ul>
       </div>
     </div>

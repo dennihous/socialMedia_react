@@ -5,11 +5,6 @@ import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import { Users } from '../../dummyData'
 
 export default function Post({post}) {
-
-  const user = Users.filter(u => u.id === 1)
-
-  console.log(user[0].username)
-
   return (
     <div className="post">
       <div className="postWrapper">
