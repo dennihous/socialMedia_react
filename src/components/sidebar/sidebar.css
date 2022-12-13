@@ -1,8 +1,9 @@
 .sidebar {
   flex: 3;
   height: 100vh;
-  /* position: relative; */
+  position: sticky;
   overflow-y: scroll;
+  top: 50px;
 }
 /* issue with height .sidebar */
 
