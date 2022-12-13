@@ -30,10 +30,16 @@
   margin: 30px 10px;
 }
 
+.rightbarTitle {
+   margin-bottom: 20px;
+   margin-left: 10px;
+}
+
 .rightbarFriendList {
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-left: 10px;
 }
 
 .rightbarFriend {
