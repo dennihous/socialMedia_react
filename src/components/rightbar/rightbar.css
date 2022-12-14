@@ -65,6 +65,17 @@
   font-weight: 300;
 }
 
+.rightbarFollowers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.rightbarFollower {
+  display: flex;
+  flex-direction: column;
+}
+
 .rightbarFollowerImage {
   width: 100px;
   height: 100px;

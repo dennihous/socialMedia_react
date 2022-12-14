@@ -48,37 +48,28 @@ export default function Rightbar({profile}) {
             <img src="assets/profilePic.jpg" alt="" className="rightbarFollowerImage" />
             <span className='rightbarFollowerName'>Dennis</span>
           </div>
-        </div>
-        <div className="rightbarFollowers">
+          <div className="rightbarFollower">
+            <img src="assets/profilePic.jpg" alt="" className="rightbarFollowerImage" />
+            <span className='rightbarFollowerName'>Dennis</span>
+          </div>
+          <div className="rightbarFollower">
+            <img src="assets/profilePic.jpg" alt="" className="rightbarFollowerImage" />
+            <span className='rightbarFollowerName'>Dennis</span>
+          </div>
+          <div className="rightbarFollower">
+            <img src="assets/profilePic.jpg" alt="" className="rightbarFollowerImage" />
+            <span className='rightbarFollowerName'>Dennis</span>
+          </div>
+          <div className="rightbarFollower">
+            <img src="assets/profilePic.jpg" alt="" className="rightbarFollowerImage" />
+            <span className='rightbarFollowerName'>Dennis</span>
+          </div>
           <div className="rightbarFollower">
             <img src="assets/profilePic.jpg" alt="" className="rightbarFollowerImage" />
             <span className='rightbarFollowerName'>Dennis</span>
           </div>
         </div>
-        <div className="rightbarFollowers">
-          <div className="rightbarFollower">
-            <img src="assets/profilePic.jpg" alt="" className="rightbarFollowerImage" />
-            <span className='rightbarFollowerName'>Dennis</span>
-          </div>
-        </div>
-        <div className="rightbarFollowers">
-          <div className="rightbarFollower">
-            <img src="assets/profilePic.jpg" alt="" className="rightbarFollowerImage" />
-            <span className='rightbarFollowerName'>Dennis</span>
-          </div>
-        </div>
-        <div className="rightbarFollowers">
-          <div className="rightbarFollower">
-            <img src="assets/profilePic.jpg" alt="" className="rightbarFollowerImage" />
-            <span className='rightbarFollowerName'>Dennis</span>
-          </div>
-        </div>
-        <div className="rightbarFollowers">
-          <div className="rightbarFollower">
-            <img src="assets/profilePic.jpg" alt="" className="rightbarFollowerImage" />
-            <span className='rightbarFollowerName'>Dennis</span>
-          </div>
-        </div>
+        
       </>
     )
   }
