@@ -53,62 +53,6 @@ export default function Sidebar() {
             <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
             <span className="sidebarFriendName">Dennis</span>
           </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
-            <span className="sidebarFriendName">Dennis</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
-            <span className="sidebarFriendName">Dennis</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
-            <span className="sidebarFriendName">Dennis</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
-            <span className="sidebarFriendName">Dennis</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
-            <span className="sidebarFriendName">Dennis</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
-            <span className="sidebarFriendName">Dennis</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
-            <span className="sidebarFriendName">Dennis</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
-            <span className="sidebarFriendName">Dennis</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
-            <span className="sidebarFriendName">Dennis</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
-            <span className="sidebarFriendName">Dennis</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
-            <span className="sidebarFriendName">Dennis</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
-            <span className="sidebarFriendName">Dennis</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
-            <span className="sidebarFriendName">Dennis</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
-            <span className="sidebarFriendName">Dennis</span>
-          </li>
         </ul>
       </div>
     </div>
