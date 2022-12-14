@@ -3,8 +3,15 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import { Users } from '../../dummyData'
+// import { useState } from 'react'
 
 export default function Post({post}) {
+  // const [like, setLike] = useState(post.like)
+  // const [isLiked, setIsLiked] = useState(false)
+  // const likeHandler = () => {
+  //   setLike(isLiked ? like+1 : like-1)
+  //   setIsLiked(!isLiked)
+  // }
   return (
     <div className="post">
       <div className="postWrapper">
@@ -24,7 +31,7 @@ export default function Post({post}) {
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">
-            <ThumbUpIcon htmlColor="skyblue" className="likeIcon"/>
+            <ThumbUpIcon htmlColor="skyblue" className="likeIcon" />
             <FavoriteIcon htmlColor="red" className="likeIcon" />
             <span className="postLikeCounter">{post.like} people like it</span>
           </div>
