@@ -24,4 +24,9 @@
   font-size: 50px;
   font-weight: 800;
   color: #1775ee;
+  margin-bottom: 10px;
+}
+
+.loginDescription {
+  font-size: 25px;
 }
