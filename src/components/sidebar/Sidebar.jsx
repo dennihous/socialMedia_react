@@ -8,6 +8,7 @@ import WorkIcon from '@mui/icons-material/Work';
 import EventIcon from '@mui/icons-material/Event';
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import CloseFriends from '../closeFriends/CloseFriends';
+import { Users } from '../../dummyData'
 
 export default function Sidebar() {
   return  (
@@ -50,7 +51,9 @@ export default function Sidebar() {
         <button className="sidebarButton">Show More</button>
         <hr className='sidebarHr'></hr>
         <ul className="sidebarFriendList">
-          <CloseFriends />
+          {Users.map(u =>  (
+            <CloseFriends key={u.id} user={u} />
+          ))}
         </ul>
       </div>
     </div>
