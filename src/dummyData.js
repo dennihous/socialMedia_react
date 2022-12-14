@@ -32,22 +32,22 @@ export const Users = [
   {
     id: 7,
     profilePicture: "assets/profilePic.jpg",
-    username: "Dennis1"
+    username: "Dennis7"
   },
   {
     id: 8,
     profilePicture: "assets/profilePic.jpg",
-    username: "Dennis2"
+    username: "Dennis8"
   },
   {
     id: 9,
     profilePicture: "assets/profilePic.jpg",
-    username: "Dennis3"
+    username: "Dennis9"
   },
   {
     id: 10,
     profilePicture: "assets/profilePic.jpg",
-    username: "Dennis4"
+    username: "Dennis10"
   },
 ];
 
