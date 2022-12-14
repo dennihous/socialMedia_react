@@ -74,6 +74,8 @@
 .rightbarFollower {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .rightbarFollowerImage {
