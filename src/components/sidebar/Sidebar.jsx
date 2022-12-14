@@ -7,6 +7,7 @@ import BookmarkIcon from '@mui/icons-material/Bookmark';
 import WorkIcon from '@mui/icons-material/Work';
 import EventIcon from '@mui/icons-material/Event';
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
+import CloseFriends from '../closeFriends/CloseFriends';
 
 export default function Sidebar() {
   return  (
@@ -49,10 +50,7 @@ export default function Sidebar() {
         <button className="sidebarButton">Show More</button>
         <hr className='sidebarHr'></hr>
         <ul className="sidebarFriendList">
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src='/assets/profilePic.jpg' alt=''/>
-            <span className="sidebarFriendName">Dennis</span>
-          </li>
+          <CloseFriends />
         </ul>
       </div>
     </div>
