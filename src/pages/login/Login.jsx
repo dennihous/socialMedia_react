@@ -12,7 +12,7 @@ export default function Login() {
           <div className="loginBox">
             <input placeholder="Email" className="loginInput" />
             <input placeholder="Password" className="loginInput" />
-            <button className="loginButon">Log In</button>
+            <button className="loginButton">Log In</button>
             <span className="loginForgot">Forgot Password?</span>
             <button className="loginRegisterButton">Create new account</button>
           </div>
