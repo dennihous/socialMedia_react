@@ -41,3 +41,16 @@
   list-style: none;
   margin-left: 10px;
 }
+
+.rightbarTitle {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.rightbarFollowerImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
