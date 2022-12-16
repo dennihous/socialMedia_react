@@ -1,4 +1,4 @@
-// import Profile from "./pages/profile/Profile";
+import Profile from "./pages/profile/Profile";
 import Home from "./pages/home/Home";
 // import Login from "./pages/login/Login";
 // import Register from "./pages/register/Register";
@@ -13,7 +13,10 @@ function App() {
     <Router>
       <Switch>
         <Route path="/">
-          <Home />
+          <Home/>
+        </Route>
+        <Route path="/profile">
+          <Profile/>
         </Route>
       </Switch>
     </Router>
