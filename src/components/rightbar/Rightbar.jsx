@@ -5,6 +5,7 @@ import Online from '../online/Online';
 
 export default function Rightbar({profile}) {
   const HomeRightbar = () => {
+    const PF = process.env.REACT_APP_PUBLIC_FOLDER;
     return (
       <>
          <div className="birthdayContainer">
@@ -13,7 +14,7 @@ export default function Rightbar({profile}) {
             <b>Dennis</b> and <b>3 other friends</b> have their birthday today.
           </span>
         </div>
-        <img src="assets/profilePic.jpg" alt="" className="rightbarAd" />
+        <img src={`${PF}profilePic.jpg`} alt="" className="rightbarAd" />
         <h4 className="rightbarTitle">Online friends</h4>
         <ul className="rightbarFriendList">
           {Users.map(u =>  (
@@ -25,6 +26,8 @@ export default function Rightbar({profile}) {
   }
 
   const ProfileRightbar = () => {
+    const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+
     return (
       <>
         <h4 className="rightbarTitle">User info title</h4>
@@ -45,27 +48,27 @@ export default function Rightbar({profile}) {
         <h4 className="rightbarTitle">User friends</h4>
         <div className="rightbarFollowers">
           <div className="rightbarFollower">
-            <img src="assets/profilePic.jpg" alt="" className="rightbarFollowerImage" />
+            <img src={`${PF}profilePic.jpg`} alt="" className="rightbarFollowerImage" />
             <span className='rightbarFollowerName'>Dennis</span>
           </div>
           <div className="rightbarFollower">
-            <img src="assets/profilePic.jpg" alt="" className="rightbarFollowerImage" />
+            <img src={`${PF}profilePic.jpg`} alt="" className="rightbarFollowerImage" />
             <span className='rightbarFollowerName'>Dennis</span>
           </div>
           <div className="rightbarFollower">
-            <img src="assets/profilePic.jpg" alt="" className="rightbarFollowerImage" />
+            <img src={`${PF}profilePic.jpg`} alt="" className="rightbarFollowerImage" />
             <span className='rightbarFollowerName'>Dennis</span>
           </div>
           <div className="rightbarFollower">
-            <img src="assets/profilePic.jpg" alt="" className="rightbarFollowerImage" />
+            <img src={`${PF}profilePic.jpg`} alt="" className="rightbarFollowerImage" />
             <span className='rightbarFollowerName'>Dennis</span>
           </div>
           <div className="rightbarFollower">
-            <img src="assets/profilePic.jpg" alt="" className="rightbarFollowerImage" />
+            <img src={`${PF}profilePic.jpg`} alt="" className="rightbarFollowerImage" />
             <span className='rightbarFollowerName'>Dennis</span>
           </div>
           <div className="rightbarFollower">
-            <img src="assets/profilePic.jpg" alt="" className="rightbarFollowerImage" />
+            <img src={`${PF}profilePic.jpg`} alt="" className="rightbarFollowerImage" />
             <span className='rightbarFollowerName'>Dennis</span>
           </div>
         </div>
