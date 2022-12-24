@@ -9,7 +9,8 @@ export default function Feed() {
   const [post, usePost] = useState([])
 
   useEffect(() => {
-    axios.get("/timeline/")
+    const res = axios.get("posts/timeline/637cd7659f3f12617f873ec7")
+    console.log(res)
   }, [])
 
   return  (
