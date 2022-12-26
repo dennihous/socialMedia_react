@@ -3,11 +3,12 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 // import { Users } from '../../dummyData'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function Post({post}) {
   const [like, setLike] = useState(post.like);
   const [isLiked, setIsLiked] = useState(false);
+  const [user, setUser] = useState({});
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 
   useEffect(() => {
