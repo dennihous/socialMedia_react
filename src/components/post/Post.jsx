@@ -12,11 +12,11 @@ export default function Post({post}) {
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 
   useEffect(() => {
-    const fetchPosts = async () => {
+    const fetchUser = async () => {
       const res = await axios.get("posts/timeline/637cd7659f3f12617f873ec7")
       setPosts(res.data)
     }
-    fetchPosts()
+    fetchUser()
   }, [])
 
   const likeHandler = () => {
