@@ -14,8 +14,8 @@ export default function Post({post}) {
 
   useEffect(() => {
     const fetchUser = async () => {
-      const res = await axios.get("posts/timeline/637cd7659f3f12617f873ec7")
-      setPosts(res.data)
+      const res = await axios.get(`users/${post.userId}`)
+      setUser(res.data)
     }
     fetchUser()
   }, [])
@@ -29,8 +29,8 @@ export default function Post({post}) {
       <div className="postWrapper">
         <div className="postTop">
           <div className="postTopLeft">
-            <img className="postProfileImage" src={PF + Users.filter(u => u.id === post.userId)[0].profilePicture} alt="" />
-            <span className="postUsername">{Users.filter(u => u.id === post.userId)[0].username}</span>
+            <img className="postProfileImage" src={user.profilePicture} alt="" />
+            <span className="postUsername">{user.username}</span>
             <span className="postDate">{post.date}</span>
           </div>
           <div className="postTopRight">
