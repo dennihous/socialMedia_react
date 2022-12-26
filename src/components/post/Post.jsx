@@ -10,6 +10,14 @@ export default function Post({post}) {
   const [isLiked, setIsLiked] = useState(false);
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 
+  useEffect(() => {
+    const fetchPosts = async () => {
+      const res = await axios.get("posts/timeline/637cd7659f3f12617f873ec7")
+      setPosts(res.data)
+    }
+    fetchPosts()
+  }, [])
+
   const likeHandler = () => {
     setLike(isLiked ? like-1 : like+1)
     setIsLiked(!isLiked)
