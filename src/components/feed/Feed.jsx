@@ -6,23 +6,23 @@ import axios from "axios"
 // import {Posts} from '../../dummyData.js'
 
 export default function Feed() {
-  const [post, usePost] = useState([])
+  const [posts, setPosts] = useState([])
 
   useEffect(() => {
     const fetchPosts = async () => {
-      
+      const res = await axios.get("posts/timeline/637cd7659f3f12617f873ec7")
+      setPosts(res.data)
     }
-    const res = await axios.get("posts/timeline/637cd7659f3f12617f873ec7")
-    console.log(res)
+    fetchPosts()
   }, [])
 
   return  (
     <div className='feed'>
       <div className="feedWrapper">
         <Share/>
-        {/* { Posts.map(p => (
+        { posts.map((p) => (
           <Post key={p.id} post={p}/>
-        ))} */}
+        ))}
       </div>
     </div>
   )
