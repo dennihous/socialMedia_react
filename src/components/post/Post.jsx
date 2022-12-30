@@ -29,7 +29,7 @@ export default function Post({post}) {
       <div className="postWrapper">
         <div className="postTop">
           <div className="postTopLeft">
-            <img className="postProfileImage" src={user.profilePicture} alt="" />
+            <img className="postProfileImage" src={user.profilePicture || PF + "profilePic.jpg"} alt="" />
             <span className="postUsername">{user.username}</span>
             <span className="postDate">{post.date}</span>
           </div>
