@@ -18,7 +18,7 @@ export default function Post({post}) {
       setUser(res.data)
     }
     fetchUser()
-  }, [])
+  })
 
   const likeHandler = () => {
     setLike(isLiked ? like-1 : like+1)
