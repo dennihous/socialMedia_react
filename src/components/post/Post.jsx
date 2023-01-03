@@ -4,6 +4,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import axios from "axios"
 import { useState, useEffect } from 'react'
+import {format} from 'timeago.js'
 
 export default function Post({post}) {
   const [like, setLike] = useState(post.likes.length);
@@ -30,7 +31,7 @@ export default function Post({post}) {
           <div className="postTopLeft">
             <img className="postProfileImage" src={user.profilePicture || PF + "profile-empty.webp"} alt="" />
             <span className="postUsername">{user.username}</span>
-            <span className="postDate">{post.date}</span>
+            <span className="postDate">{format(post.createdAt)}</span>
           </div>
           <div className="postTopRight">
           <MoreVertIcon/>
