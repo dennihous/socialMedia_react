@@ -4,7 +4,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import axios from "axios"
 import { useState, useEffect } from 'react'
-import {format} from 'timeago.js'
+import TimeAgo from "react-timeago";
 
 export default function Post({post}) {
   const [like, setLike] = useState(post.likes.length);
