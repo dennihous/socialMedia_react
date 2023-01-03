@@ -3,7 +3,6 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import axios from "axios"
-// import { Users } from '../../dummyData'
 import { useState, useEffect } from 'react'
 
 export default function Post({post}) {
