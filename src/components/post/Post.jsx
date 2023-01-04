@@ -31,7 +31,7 @@ export default function Post({post}) {
           <div className="postTopLeft">
             <img className="postProfileImage" src={user.profilePicture || PF + "profile-empty.webp"} alt="" />
             <span className="postUsername">{user.username}</span>
-            <span className="postDate">{format(post.createdAt)}</span>
+            <span className="postDate"><TimeAgo date={post.createdAt} /></span>
           </div>
           <div className="postTopRight">
           <MoreVertIcon/>
