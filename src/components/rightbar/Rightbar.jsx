@@ -34,7 +34,7 @@ export default function Rightbar({user}) {
         <div className="rightbarInfo">
           <div className="rightbarInfoItem">
             <span className="rightbarInfoKey">City: </span>
-            <span className="rightbarInfoValue">London</span> 
+            <span className="rightbarInfoValue">{user.City}</span> 
           </div>
           <div className="rightbarInfoItem">
             <span className="rightbarInfoKey">From: </span>
