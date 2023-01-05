@@ -31,8 +31,8 @@ export default function Profile() {
               <img src={`${PF}profilePic.jpg`} alt="" className="profileUserImage" />
             </div>
             <div className="profileInfo">
-              <h4 className="profileInfoName">Dennis</h4>
-              <span className="profileInfoDescription ">Hello this is my profile</span>
+              <h4 className="profileInfoName">{user.username}</h4>
+              <span className="profileInfoDescription ">{user.description}</span>
 
             </div>
           </div>
