@@ -12,11 +12,11 @@ export default function Profile() {
 
   useEffect(() => {
     const fetchUser = async () => {
-      const res = await axios.get(`/users/${post.userId}`)
+      const res = await axios.get(`/users?username=dennis`)
       setUser(res.data)
     }
     fetchUser()
-  }, [post.userId])
+  }, [])
 
   return (
     <>
