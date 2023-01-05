@@ -4,7 +4,7 @@ import './feed.css'
 import { useEffect, useState } from "react";
 import axios from "axios"
 
-export default function Feed() {
+export default function Feed({username}) {
   const [posts, setPosts] = useState([])
 
   useEffect(() => {

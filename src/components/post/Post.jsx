@@ -5,6 +5,7 @@ import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import axios from "axios"
 import { useState, useEffect } from 'react'
 import TimeAgo from "react-timeago";
+import {Link} from 'react-router-dom';
 
 export default function Post({post}) {
   const [like, setLike] = useState(post.likes.length);
@@ -29,7 +30,9 @@ export default function Post({post}) {
       <div className="postWrapper">
         <div className="postTop">
           <div className="postTopLeft">
-            <img className="postProfileImage" src={user.profilePicture || PF + "profile-empty.webp"} alt="" />
+            <Link to={`profile/${user.username}`}>
+              <img className="postProfileImage" src={user.profilePicture || PF + "profile-empty.webp"} alt="" />
+            </Link>
             <span className="postUsername">{user.username}</span>
             <span className="postDate"><TimeAgo date={post.createdAt} /></span>
           </div>
