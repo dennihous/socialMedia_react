@@ -4,6 +4,7 @@ import Feed from "../../components/feed/Feed";
 import Rightbar from "../../components/rightbar/Rightbar";
 import "./profile.css";
 import {useState, useEffect} from "react";
+import axios from "axios";
 
 export default function Profile() {
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
