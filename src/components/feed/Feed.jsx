@@ -9,7 +9,9 @@ export default function Feed({username}) {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = username ? action : await axios.get("posts/timeline/637cd7659f3f12617f873ec7")
+      const res = username 
+      ? await axios.get("posts/profile/"+username) 
+      : await axios.get("posts/timeline/637cd7659f3f12617f873ec7")
       setPosts(res.data)
     }
     fetchPosts()
