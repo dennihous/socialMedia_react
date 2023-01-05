@@ -6,7 +6,16 @@ import "./profile.css"
 
 export default function Profile() {
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+  const [user, setUser] = useState({});
 
+  useEffect(() => {
+    const fetchUser = async () => {
+      const res = await axios.get(`/users/${post.userId}`)
+      setUser(res.data)
+    }
+    fetchUser()
+  }, [post.userId])
+  
   return (
     <>
     <div>
