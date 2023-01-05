@@ -3,7 +3,7 @@ import CakeIcon from '@mui/icons-material/Cake';
 import { Users } from '../../dummyData';
 import Online from '../online/Online';
 
-export default function Rightbar({profile}) {
+export default function Rightbar({user}) {
   const HomeRightbar = () => {
     const PF = process.env.REACT_APP_PUBLIC_FOLDER;
     return (
