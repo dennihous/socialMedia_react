@@ -38,7 +38,7 @@ export default function Rightbar({user}) {
           </div>
           <div className="rightbarInfoItem">
             <span className="rightbarInfoKey">From: </span>
-            <span className="rightbarInfoValue">Ireland</span> 
+            <span className="rightbarInfoValue">{user.from}</span> 
           </div>
           <div className="rightbarInfoItem">
             <span className="rightbarInfoKey">Gender: </span>
