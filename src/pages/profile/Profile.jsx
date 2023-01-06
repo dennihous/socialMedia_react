@@ -27,8 +27,8 @@ export default function Profile() {
         <div className="profileRight">
           <div className="profileRightTop">
             <div className="profileCover">
-              <img src={`${PF}cover.jpeg`} alt="" className="profileCoverImage" />
-              <img src={`${PF}profilePic.jpg`} alt="" className="profileUserImage" />
+              <img src={user.coverPicture || PF+"cover-empty.jpeg"} alt="" className="profileCoverImage" />
+              <img src={user.profilePicture || PF+"profile-empty.webp"} alt="" className="profileUserImage" />
             </div>
             <div className="profileInfo">
               <h4 className="profileInfoName">{user.username}</h4>
