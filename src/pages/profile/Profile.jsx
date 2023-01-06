@@ -38,7 +38,7 @@ export default function Profile() {
             </div>
           </div>
           <div className="profileRightBottom">
-            <Feed username="dennis"/>
+            <Feed username={username}/>
             <Rightbar user={user} />
           </div>
         </div>
