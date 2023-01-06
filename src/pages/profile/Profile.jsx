@@ -5,18 +5,20 @@ import Rightbar from "../../components/rightbar/Rightbar";
 import "./profile.css";
 import {useState, useEffect} from "react";
 import axios from "axios";
+import {useParams} from 'react-router'
 
 export default function Profile() {
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   const [user, setUser] = useState({});
+  const usename = useParams().usename
 
   useEffect(() => {
     const fetchUser = async () => {
-      const res = await axios.get(`/users?username=dennis`)
+      const res = await axios.get(`/users?username=${username}`)
       setUser(res.data)
     }
     fetchUser()
-  }, [])
+  }, [username])
 
   return (
     <>
