@@ -80,7 +80,7 @@ export default function Rightbar({user}) {
     <div className='rightbar'>
       <div className="rightbarWrapper">
         
-        { profile ? <ProfileRightbar /> : <HomeRightbar />}
+        { user ? <ProfileRightbar /> : <HomeRightbar />}
       </div>
     </div>
   )
