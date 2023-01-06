@@ -20,7 +20,7 @@ export default function Login() {
         <div className="loginRight">
           <form className="loginBox" onSubmit={handleClick}>
             <input placeholder="Email" type="email" className="loginInput" ref={email} />
-            <input placeholder="Password" type="password" className="loginInput" />
+            <input placeholder="Password" type="password" className="loginInput" ref={password}/>
             <button className="loginButton">Log In</button>
             <span className="loginForgot">Forgot Password?</span>
             <button className="loginRegisterButton">Create new account</button>
