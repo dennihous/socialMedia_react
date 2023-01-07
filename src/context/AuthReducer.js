@@ -19,6 +19,8 @@ const AuthReducer = (state, action) => {
             error: action.payload
           };
       default:
-        return state
+        return state;
   }
 }
+
+export default AuthReducer;
