@@ -7,13 +7,14 @@ import {AuthContext} from "../../context/AuthContext"
 export default function Login() {
   const email = useRef();
   const password = useRef();
-  const {isFetching, error, dispatch} = useContext(AuthContext)
+  const {user, isFetching, error, dispatch} = useContext(AuthContext)
 
   const handleClick = (e) => {
     e.preventDefault()
-    loginCall({email, password}, dispatch)
+    loginCall({email: email.current.value, password: password.current.value}, dispatch)
   }
 
+  console.log(user)
   return (
     <div className="login">
       <div className="loginWrapper">
