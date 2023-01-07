@@ -1,5 +1,6 @@
 import { useRef } from "react"
 import "./login.css"
+import { loginCall } from "../../apiCalls";
 
 export default function Login() {
   const email = useRef();
@@ -7,7 +8,7 @@ export default function Login() {
 
   const handleClick = (e) => {
     e.preventDefault()
-    console.log(email.current.value)
+    loginCall({email, password}, dispatch)
   }
 
   return (
