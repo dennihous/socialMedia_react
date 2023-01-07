@@ -7,7 +7,7 @@ export default function Login() {
 
   const handleClick = (e) => {
     e.preventDefault()
-    console.log(email)
+    console.log(email.current.value)
   }
 
   return (
