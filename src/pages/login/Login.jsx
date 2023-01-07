@@ -2,10 +2,10 @@ import { useRef } from "react"
 import "./login.css"
 
 export default function Login() {
+  const email = useRef();
+  const password = useRef();
 
   const handleClick = (e) => {
-    const email = useRef();
-    const password = useRef();
     e.preventDefault()
     console.log("clicked")
   }
