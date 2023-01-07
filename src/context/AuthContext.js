@@ -1,4 +1,4 @@
-import {createContext} from 'react';
+import {createContext, useReducer} from 'react';
 
 const INITIAL_STATE = {
   user: null,
@@ -7,3 +7,7 @@ const INITIAL_STATE = {
 };
 
 export const AuthContext = createContext(INITIAL_STATE);
+
+export const AuthContextProvider = () => {
+  const [state, dispatch] = useReducer(AuthContext, INITIAL_STATE);
+}
