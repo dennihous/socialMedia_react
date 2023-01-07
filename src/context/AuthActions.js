@@ -3,5 +3,9 @@ export const LoginStart = (user) => ({
 });
 
 export const LoginSuccess = (user) => ({
-  type:"LOGIN-START",
+  type:"LOGIN-SUCCESS",
+});
+
+export const LoginFailure = (user) => ({
+  type:"LOGIN-FAILURE",
 });
