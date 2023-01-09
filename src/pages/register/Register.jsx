@@ -9,6 +9,9 @@ export default function Register() {
 
   const handleClick = (e) => {
     e.preventDefault()
+    if(confirmPassword.current.value !== password.current.value){
+      currentPassword.current.setCustomValidity("Passwords don't match")
+    }
   }
 
   return (
