@@ -1,6 +1,16 @@
 import "./register.css"
+import { useRef } from "react";
 
 export default function Register() {
+  const username = useRef();
+  const email = useRef();
+  const password = useRef();
+  const passwordAgain = useRef();
+
+  const handleClick = (e) => {
+    e.preventDefault()
+  }
+
   return (
     <div className="login">
       <div className="loginWrapper">
