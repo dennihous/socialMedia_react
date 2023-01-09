@@ -19,14 +19,14 @@ export default function Register() {
           <span className="loginDescription">Connect with DenniSocial</span>
         </div>
         <div className="loginRight">
-          <div className="loginBox">
-            <input placeholder="Username" ref={username} className="loginInput" />
-            <input placeholder="Email" ref={email} className="loginInput" />
-            <input type="password" placeholder="Password" ref={password} className="loginInput" />
-            <input type="password" placeholder="Confirm Password" ref={confirmPassword} className="loginInput" />
-            <button className="loginButton">Sign Up</button>
+          <form className="loginBox" onSubmit={handleClick}>
+            <input placeholder="Username" required ref={username} className="loginInput" />
+            <input placeholder="Email" required ref={email} className="loginInput" type="email" />
+            <input placeholder="Password" required ref={password} className="loginInput" type="password" minLength="6"/>
+            <input placeholder="Confirm Password" required ref={confirmPassword} className="loginInput" type="password" />
+            <button className="loginButton" type="submit">Sign Up</button>
             <button className="loginRegisterButton">Log into your account</button>
-          </div>
+          </form>
         </div>
       </div>
     </div>
