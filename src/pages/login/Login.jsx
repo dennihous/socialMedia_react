@@ -29,7 +29,7 @@ export default function Login() {
             <input placeholder="Password" type="password" required className="loginInput" ref={password} minLength="6"/>
             <button className="loginButton">{isFetching ? <CircularProgress size="20px" style={{ color: 'white' }}/> : "Log In"}</button>
             <span className="loginForgot">Forgot Password?</span>
-            <button className="loginRegisterButton">Create new account</button>
+            <button className="loginRegisterButton">{isFetching ? <CircularProgress size="20px" style={{ color: 'white' }}/> : "Create new account"}</button>
           </form>
         </div>
       </div>
