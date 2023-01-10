@@ -20,7 +20,7 @@ export default function Share() {
             <input placeholder={"What's on your mind "+user.username+"?"} className="shareInput" ref={description}/> 
           </div>
           <hr className="shareHr" />
-          <form className="shareBottom">
+          <form className="shareBottom" onSubmit={submitHandler}>
             <div className="shareOptions">
               <label htmlFor="file" className="shareOption">
                 <PermMediaIcon htmlColor="tomato" className="shareIcon" />
@@ -40,7 +40,7 @@ export default function Share() {
                 <span className="shareOptionText">Emojis</span>
               </div>
             </div>
-            <button className="shareButton">Share</button>
+            <button className="shareButton" type="submit">Share</button>
           </form>
         </div>
     </div>
