@@ -6,7 +6,6 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import {Link} from 'react-router-dom';
 import { useContext } from "react";
 import { AuthContext } from "../../context/AuthContext";
-import { experimentalStyled } from "@mui/material";
 
 export default function Topbar() {
   const {user} = useContext(AuthContext)
