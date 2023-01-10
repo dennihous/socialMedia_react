@@ -24,12 +24,16 @@ export default function Share() {
       const fileName = Date.now() + file.name;
       data.append("file", file);
       data.append("name", fileName)
+      newPost.image = fileName;
+      try{
+        await axios.post("/upload", data)
+      } catch(err){
+        console.log(err)
+      }
     }
     try{
       await axios.post("/posts", newPost)
-    } catch(err){
-
-    }
+    } catch(err){}
   }
 
   return (
