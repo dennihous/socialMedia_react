@@ -3,13 +3,14 @@ import PermMediaIcon from '@mui/icons-material/PermMedia';
 import StyleIcon from '@mui/icons-material/Style';
 import RoomIcon from '@mui/icons-material/Room';
 import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
-import { useContext, useRef } from "react";
+import { useContext, useRef, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
 
 export default function Share() {
   const {user} = useContext(AuthContext)
   const PF = process.env.REACT_APP_PUBLIC_FOLDER
   const description = useRef()
+  const [file, setFile] = useState(null)
 
   return (
     <div className="share">
@@ -21,11 +22,11 @@ export default function Share() {
           <hr className="shareHr" />
           <form className="shareBottom">
             <div className="shareOptions">
-              <div className="shareOption">
+              <label htmlFor="file" className="shareOption">
                 <PermMediaIcon htmlColor="tomato" className="shareIcon" />
                 <span className="shareOptionText">Photo or Video</span>
-                <input type="file" id="file" accept=".png,.jpeg,.webp,.jpg" />
-              </div>
+                <input style={{display: "none"}} type="file" id="file" accept=".png,.jpeg,.webp,.jpg" onChange={(e) => setFile(e.target.files[0])}/>
+              </label>
               <div className="shareOption">
                 <StyleIcon htmlColor="blue" className="shareIcon" />
                 <span className="shareOptionText">Tag</span>
