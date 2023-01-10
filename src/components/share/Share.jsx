@@ -18,7 +18,7 @@ export default function Share() {
             <input placeholder={"What's on your mind "+user.username+"?"} className="shareInput" /> 
           </div>
           <hr className="shareHr" />
-          <div className="shareBottom">
+          <form className="shareBottom">
             <div className="shareOptions">
               <div className="shareOption">
                 <PermMediaIcon htmlColor="tomato" className="shareIcon" />
@@ -38,7 +38,7 @@ export default function Share() {
               </div>
             </div>
             <button className="shareButton">Share</button>
-          </div>
+          </form>
         </div>
     </div>
   )
