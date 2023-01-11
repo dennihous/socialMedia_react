@@ -2,21 +2,24 @@ import './rightbar.css'
 import CakeIcon from '@mui/icons-material/Cake';
 import { Users } from '../../dummyData';
 import Online from '../online/Online';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 export default function Rightbar({user}) {
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+  const [friends, setFriends] = useState([])
 
   useEffect(() => {
     const getFriends = async () => {
       try{
         const friendList = await axios.get("/users/friends/"+ user._id)
+        setFriends(friendList.data)
       } catch(err){
         console.log(err)
       }
     }
-  }, [])
+    getFriends()
+  }, [user._id])
 
   const HomeRightbar = () => {
 
