@@ -6,18 +6,19 @@ import { useEffect } from 'react';
 import axios from 'axios';
 
 export default function Rightbar({user}) {
-  const HomeRightbar = () => {
-    const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 
-    useEffect(() => {
-      const getFriends = async () => {
-        try{
-          const friendList = await axios.get("/users/friends/"+ user._id)
-        } catch(err){
-          console.log(err)
-        }
+  useEffect(() => {
+    const getFriends = async () => {
+      try{
+        const friendList = await axios.get("/users/friends/"+ user._id)
+      } catch(err){
+        console.log(err)
       }
-    }, [])
+    }
+  }, [])
+
+  const HomeRightbar = () => {
 
     return (
       <>
