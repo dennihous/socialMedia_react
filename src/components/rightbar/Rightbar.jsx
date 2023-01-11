@@ -70,10 +70,13 @@ export default function Rightbar({user}) {
         </div>
         <h4 className="rightbarTitle">User friends</h4>
         <div className="rightbarFollowers">
-          <div className="rightbarFollower">
-            <img src={`${PF}profilePic.jpg`} alt="" className="rightbarFollowerImage" />
-            <span className='rightbarFollowerName'>Dennis</span>
+          {friends.map((friend) => {
+            return (
+            <div className="rightbarFollower">
+            <img src={friend.profilePicture ? PF+friend.profilePicture : PF+"profile-empty.webp"} alt="" className="rightbarFollowerImage" />
+            <span className='rightbarFollowerName'>{friend.username}</span>
           </div>
+          )})}
         </div>
         
       </>
