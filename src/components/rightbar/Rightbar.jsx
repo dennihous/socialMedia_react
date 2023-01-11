@@ -57,26 +57,6 @@ export default function Rightbar({user}) {
             <img src={`${PF}profilePic.jpg`} alt="" className="rightbarFollowerImage" />
             <span className='rightbarFollowerName'>Dennis</span>
           </div>
-          <div className="rightbarFollower">
-            <img src={`${PF}profilePic.jpg`} alt="" className="rightbarFollowerImage" />
-            <span className='rightbarFollowerName'>Dennis</span>
-          </div>
-          <div className="rightbarFollower">
-            <img src={`${PF}profilePic.jpg`} alt="" className="rightbarFollowerImage" />
-            <span className='rightbarFollowerName'>Dennis</span>
-          </div>
-          <div className="rightbarFollower">
-            <img src={`${PF}profilePic.jpg`} alt="" className="rightbarFollowerImage" />
-            <span className='rightbarFollowerName'>Dennis</span>
-          </div>
-          <div className="rightbarFollower">
-            <img src={`${PF}profilePic.jpg`} alt="" className="rightbarFollowerImage" />
-            <span className='rightbarFollowerName'>Dennis</span>
-          </div>
-          <div className="rightbarFollower">
-            <img src={`${PF}profilePic.jpg`} alt="" className="rightbarFollowerImage" />
-            <span className='rightbarFollowerName'>Dennis</span>
-          </div>
         </div>
         
       </>
