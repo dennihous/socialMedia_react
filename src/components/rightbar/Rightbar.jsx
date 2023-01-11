@@ -4,6 +4,7 @@ import { Users } from '../../dummyData';
 import Online from '../online/Online';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 export default function Rightbar({user}) {
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
@@ -72,10 +73,12 @@ export default function Rightbar({user}) {
         <div className="rightbarFollowers">
           {friends.map((friend) => {
             return (
+            <Link to={"/profile/"+friend.username} style={{textDecoration: "none"}}>
             <div className="rightbarFollower">
             <img src={friend.profilePicture ? PF+friend.profilePicture : PF+"profile-empty.webp"} alt="" className="rightbarFollowerImage" />
             <span className='rightbarFollowerName'>{friend.username}</span>
           </div>
+            </Link>
           )})}
         </div>
         
