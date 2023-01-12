@@ -84,3 +84,9 @@
   object-fit: cover;
   border-radius: 5px;
 }
+
+.rightbarFollowButton {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border: none;
+}
