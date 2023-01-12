@@ -7,6 +7,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthContext';
 import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove';
 import { useParams } from "react-router";
 
 
@@ -69,7 +70,8 @@ export default function Rightbar({user}) {
       <>
       {user.username !== currentUser.username && (
         <button className="rightbarFollowButton">
-          Follow<AddIcon />
+          {followed ? "Unfollow" : "Follow"}
+          {followed ? <RemoveIcon /> : <AddIcon />}
         </button>
       )}
         <h4 className="rightbarTitle">User info title</h4>
