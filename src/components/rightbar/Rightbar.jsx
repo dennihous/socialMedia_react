@@ -7,23 +7,26 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthContext';
 import AddIcon from '@mui/icons-material/Add';
+import { useParams } from "react-router";
+
 
 export default function Rightbar({user}) {
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   const [friends, setFriends] = useState([])
   const {user:currentUser} = useContext(AuthContext)
+  const params = useParams();
 
   useEffect(() => {
     const getFriends = async () => {
       try{
-        const friendList = await axios.get("/users/friends/"+ user._id)
+        const friendList = await axios.get(`/users/${params.id}/friends/`)
         setFriends(friendList.data)
       } catch(err){
         console.log(err)
       }
     }
     getFriends()
-  }, [user._id])
+  }, [params.id])
 
   const HomeRightbar = () => {
 
