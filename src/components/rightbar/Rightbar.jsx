@@ -2,13 +2,16 @@ import './rightbar.css'
 import CakeIcon from '@mui/icons-material/Cake';
 import { Users } from '../../dummyData';
 import Online from '../online/Online';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../context/AuthContext';
+import AddIcon from '@mui/icons-material/Add';
 
 export default function Rightbar({user}) {
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   const [friends, setFriends] = useState([])
+  const {user:currentUser} = useContext(AuthContext)
 
   useEffect(() => {
     const getFriends = async () => {
@@ -48,6 +51,11 @@ export default function Rightbar({user}) {
 
     return (
       <>
+      {user.username !== currentUser.username && (
+        <button className="rightbarFollowButton">
+          Follow<AddIcon />
+        </button>
+      )}
         <h4 className="rightbarTitle">User info title</h4>
         <div className="rightbarInfo">
           <div className="rightbarInfoItem">
@@ -72,14 +80,13 @@ export default function Rightbar({user}) {
         <h4 className="rightbarTitle">User friends</h4>
         <div className="rightbarFollowers">
           {friends.map((friend) => {
-            return (
             <Link to={"/profile/"+friend.username} style={{textDecoration: "none"}}>
             <div className="rightbarFollower">
             <img src={friend.profilePicture ? PF+friend.profilePicture : PF+"profile-empty.webp"} alt="" className="rightbarFollowerImage" />
             <span className='rightbarFollowerName'>{friend.username}</span>
           </div>
             </Link>
-          )})}
+          })}
         </div>
         
       </>
