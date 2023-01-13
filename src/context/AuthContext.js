@@ -11,7 +11,8 @@ const INITIAL_STATE = {
     followers: [],
     followings: [],
     isAdmin: false,
-  },
+  }
+  ,
   isFetching: false,
   error: false
 };
