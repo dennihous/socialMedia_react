@@ -1,5 +1,5 @@
 # Visit the website!!
-
+(This is just the front end element, the full stack website is on its way)
 => https://dennisocial.netlify.app/
 
 # Getting Started with Create React App
